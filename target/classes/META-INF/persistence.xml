@@ -4,14 +4,14 @@
     <description>Forge Persistence Unit</description>
     <provider>org.hibernate.ejb.HibernatePersistence</provider>
     <jta-data-source>java:/RetardedBiblio</jta-data-source>
-    <class>model.Author</class>
-    <class>model.BookInstance</class>
-    <class>model.Book</class>
-    <class>model.Genre</class>
-    <class>model.Person</class>
+    <class>models.Author</class>
+    <class>models.BookInstance</class>
+    <class>models.Book</class>
+    <class>models.Genre</class>
+    <class>models.Person</class>
     <exclude-unlisted-classes>false</exclude-unlisted-classes>
     <properties>
-      <property name="hibernate.hbm2ddl.auto" value="create-drop"/>
+      <property name="hibernate.hbm2ddl.auto" value="update"/>
       <property name="hibernate.show_sql" value="true"/>
       <property name="hibernate.format_sql" value="true"/>
       <property name="hibernate.transaction.flush_before_completion" value="true"/>
