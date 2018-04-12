@@ -4,6 +4,11 @@
     <description>Forge Persistence Unit</description>
     <provider>org.hibernate.ejb.HibernatePersistence</provider>
     <jta-data-source>java:/RetardedBiblio</jta-data-source>
+    <class>model.Author</class>
+    <class>model.BookInstance</class>
+    <class>model.Book</class>
+    <class>model.Genre</class>
+    <class>model.Person</class>
     <exclude-unlisted-classes>false</exclude-unlisted-classes>
     <properties>
       <property name="hibernate.hbm2ddl.auto" value="create-drop"/>
